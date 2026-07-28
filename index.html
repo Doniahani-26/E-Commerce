@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My E-Commerce Store</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- إضافة أيقونات FontAwesome للسلة -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Shop<span>Now</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#new-arrivals">New Arrivals</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+      </div>
+    </nav>
+
+    <!-- Slider -->
+    <section id="home" class="slider-container">
+      <div class="slide active">
+        <img
+          src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1920&q=80"
+          alt="Sale Banner 1"
+        />
+        <div class="slide-content">
+          <h2>Summer Sale</h2>
+          <p>Up to 50% off on all items!</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img
+          src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1920&q=80"
+          alt="Sale Banner 2"
+        />
+        <div class="slide-content">
+          <h2>New Collection</h2>
+          <p>Discover the latest trends.</p>
+        </div>
+      </div>
+      <button class="prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next-btn" onclick="changeSlide(1)">&#10095;</button>
+    </section>
+
+    <!-- Products Section 1: Featured -->
+    <section id="featured" class="products-section">
+      <h2 class="section-title">Featured Products</h2>
+      <div class="product-grid">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+          <img src="imgs/smart_watch.avif" alt="Product" />
+          <h3>Smart Watch</h3>
+          <p class="price">$199.99</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80"
+            alt="Product"
+          />
+          <h3>Wireless Headphones</h3>
+          <p class="price">$149.99</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=400&q=80"
+            alt="Product"
+          />
+          <h3>Camera Lens</h3>
+          <p class="price">$299.99</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="product-card">
+          <img src="imgs/headphone.avif" alt="Product" />
+          <h3>Classic Backpack</h3>
+          <p class="price">$79.99</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section 2: New Arrivals -->
+    <section id="new-arrivals" class="products-section bg-light">
+      <h2 class="section-title">New Arrivals</h2>
+      <div class="product-grid">
+        <!-- Product Card 5 -->
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80"
+            alt="Product"
+          />
+          <h3>Running Shoes</h3>
+          <p class="price">$120.00</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <!-- Product Card 6 -->
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=400&q=80"
+            alt="Product"
+          />
+          <h3>Smart Watch v2</h3>
+          <p class="price">$250.00</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+    <!-- Video Section -->
+    <section id="promo-video" class="video-section">
+      <h2 class="section-title">See Our Products in Action</h2>
+
+      <div class="video-container">
+        <video controls autoplay muted loop>
+          <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4"
+          />
+          متصفحك لا يدعم تشغيل الفيديوهات.
+        </video>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>Shop<span>Now</span></h3>
+        <p>
+          Your one-stop shop for everything you need. Best quality, best prices.
+        </p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ShopNow. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
