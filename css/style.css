@@ -1,4 +1,4 @@
-/* --- إعدادات أساسية --- */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,6 @@ body {
   color: #333;
 }
 
-/* --- Navbar --- */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -69,7 +68,6 @@ body {
   font-weight: bold;
 }
 
-/* --- Slider --- */
 .slider-container {
   position: relative;
   width: 100%;
@@ -133,7 +131,6 @@ body {
   background-color: #ff6b6b;
 }
 
-/* --- Products Section --- */
 .products-section {
   padding: 60px 50px;
   text-align: center;
@@ -202,7 +199,6 @@ body {
   background-color: #ff6b6b;
 }
 
-/* --- Contact Section --- */
 .contact-section {
   padding: 60px 50px;
   background-color: #333;
@@ -244,7 +240,6 @@ body {
   background-color: #ff4757;
 }
 
-/* --- Footer --- */
 .footer {
   background-color: #222;
   color: #ccc;
@@ -284,7 +279,6 @@ body {
   font-size: 14px;
 }
 
-/* --- Responsive Design --- */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -302,22 +296,21 @@ body {
     font-size: 32px;
   }
 }
-/* --- Video Section --- */
 .video-section {
   padding: 60px 50px;
-  background-color: #fff; /* لون خلفية أبيض ليفصله عن الأقسام الأخرى */
+  background-color: #fff; 
   text-align: center;
 }
 
 .video-container {
-  max-width: 900px; /* أقصى عرض للفيديو */
+  max-width: 900px; 
   margin: 0 auto;
-  border-radius: 15px; /* حواف دائرية أنيقة */
-  overflow: hidden; /* لمنع خروج الفيديو عن الحواف الدائرية */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* ظل خفيف حول الفيديو */
+  border-radius: 15px;
+  overflow: hidden; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
   background-color: #000;
 
-  /* للحفاظ على الأبعاد القياسية للفيديو 16:9 */
+
   aspect-ratio: 16 / 9;
   position: relative;
 }
